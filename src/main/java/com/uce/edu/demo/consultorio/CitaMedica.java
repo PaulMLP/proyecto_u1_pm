@@ -38,7 +38,6 @@ public class CitaMedica {
 	}
 
 	// SET y GET
-
 	public LocalDateTime getFechaCita() {
 		return fechaCita;
 	}
