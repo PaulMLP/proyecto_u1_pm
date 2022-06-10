@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class Deposito {
+	private String codigoDeposito;
 	private LocalDateTime fecha;
 	private String numeroCuentaDestino;
 	private BigDecimal monto;
@@ -36,6 +37,14 @@ public class Deposito {
 
 	public void setMonto(BigDecimal monto) {
 		this.monto = monto;
+	}
+
+	public String getCodigoDeposito() {
+		return codigoDeposito;
+	}
+
+	public void setCodigoDeposito(String codigoDeposito) {
+		this.codigoDeposito = codigoDeposito;
 	}
 
 }
