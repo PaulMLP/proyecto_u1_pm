@@ -20,7 +20,7 @@ public class RetiroServiceImpl implements IRetiroService{
 	private IRetiroRepository iRetiroRepository;
 	
 	@Override
-	public void realizarRetiro(String numeroCta, String clave, BigDecimal monto) {
+	public void realizarRetiro(String numeroCta, BigDecimal monto) {
 		// TODO Auto-generated method stub
 		CuentaBancaria cta = this.bancariaService.buscar(numeroCta);
 		BigDecimal saldoCuenta = cta.getSaldo();
@@ -35,7 +35,6 @@ public class RetiroServiceImpl implements IRetiroService{
 
 		Retiro r = new Retiro();
 		r.setNumeroCuenta(numeroCta);
-		r.setClave(clave);
 		r.setMonto(monto);
 		r.setFecha(LocalDateTime.now());
 		this.iRetiroRepository.insertarRetiro(r);

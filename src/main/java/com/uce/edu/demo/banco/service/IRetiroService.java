@@ -6,7 +6,7 @@ import com.uce.edu.demo.banco.modelo.Retiro;
 
 public interface IRetiroService {
 
-	public void realizarRetiro(String numeroCta, String clave, BigDecimal monto);
+	public void realizarRetiro(String numeroCta, BigDecimal monto);
 	
 	public void actualizarrRetiro(Retiro r);
 	

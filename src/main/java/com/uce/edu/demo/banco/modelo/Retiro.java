@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 
 public class Retiro {
 	private String numeroCuenta;
-	private String clave;
 	private BigDecimal monto;
 	private LocalDateTime fecha;
 	
@@ -21,12 +20,7 @@ public class Retiro {
 	public void setNumeroCuenta(String numeroCuenta) {
 		this.numeroCuenta = numeroCuenta;
 	}
-	public String getClave() {
-		return clave;
-	}
-	public void setClave(String clave) {
-		this.clave = clave;
-	}
+	
 	public BigDecimal getMonto() {
 		return monto;
 	}
